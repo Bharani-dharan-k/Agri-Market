@@ -1,0 +1,99 @@
+/* 🛒 Cart Container */
+.cart-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  /* 🏷️ Cart Title */
+  .cart-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* 📦 Cart Products (Displayed in Rows) */
+  .cart-products {
+    display: flex;
+    flex-wrap: wrap;  /* Allows multiple rows */
+    justify-content: space-around;  /* Spreads items evenly */
+    gap: 20px;  /* Adds spacing between products */
+  }
+  
+  /* 🏷️ Individual Product */
+  .cart-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;  /* Fixed width for row layout */
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* 🖼️ Product Image */
+  .cart-product img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  /* 📄 Product Info */
+  .cart-product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .cart-product p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* 🛒 Buy Now Button (Moved to Bottom) */
+  .buy-now-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .buy-button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 200px;
+    font-weight: bold;
+  }
+  
+  .buy-button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 768px) {
+    .cart-container {
+      width: 90%;
+    }
+  
+    .cart-products {
+      flex-direction: column; /* Stack items in a column on small screens */
+      align-items: center;
+    }
+  
+    .cart-product {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  

@@ -1,0 +1,60 @@
+.user-navbar {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between;
+    background-color: #333;
+    padding: 12px 24px;
+  }
+  
+  .user-navbar h2 {
+    color: white;
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .user-navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Increased spacing for better separation */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .user-navbar li {
+    display: inline-block;
+  }
+  
+  .user-navbar a, 
+  .user-navbar button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    padding: 8px 12px; /* Adds a clickable area */
+  }
+  
+  .user-navbar a:hover, 
+  .user-navbar button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
+    border-radius: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .user-navbar {
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px;
+    }
+  
+    .user-navbar ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+  

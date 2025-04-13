@@ -1,0 +1,237 @@
+/* =================== Global Styling =================== */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =================== Authentication Page Styling =================== */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1d1f32, #2a2c45); /* Violet Gradient */
+  color: #e8a66c; /* Gold Font */
+  padding: 20px;
+  margin-top: 60px; /* Adjust this based on your navbar height */
+}
+
+
+.auth-box {
+  background: #282a3a; /* Dark Violet */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-box h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #e8a66c; /* Gold */
+}
+
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #555; /* Darker Border */
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #1d1f32; /* Dark Violet */
+  color: #e8a66c; /* Gold Font */
+  transition: all 0.3s ease;
+}
+
+.auth-box input:focus {
+  border-color: #e8a66c; /* Gold */
+  background: #22243a;
+  outline: none;
+}
+
+.auth-box .forgot-password a {
+  color: #e8a66c; /* Gold */
+}
+
+.auth-box .forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.auth-box .login-btn {
+  background: #e8a66c; /* Gold */
+  color: #1d1f32; /* Dark Violet */
+}
+
+.auth-box .login-btn:hover {
+  background: #c68c53;
+}
+
+.auth-box .signup-btn {
+  background: transparent;
+  border: 2px solid #e8a66c;
+  color: #e8a66c;
+}
+
+.auth-box .signup-btn:hover {
+  background: #e8a66c;
+  color: #1d1f32;
+}
+
+.auth-box .or-divider {
+  margin: 15px 0;
+  font-size: 1rem;
+  color: #aaa;
+  position: relative;
+}
+
+.auth-box .or-divider::before,
+.auth-box .or-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #666;
+}
+
+.auth-box .social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.auth-box .social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.auth-box .google {
+  background: #db4437;
+}
+
+.auth-box .google:hover {
+  background: #b03528;
+}
+
+.auth-box .facebook {
+  background: #1877f2;
+}
+
+.auth-box .facebook:hover {
+  background: #1259c3;
+}
+
+.auth-box .redirect a {
+  color: #e8a66c; /* Gold */
+}
+
+.auth-box .redirect a:hover {
+  text-decoration: underline;
+}
+
+/* Checkbox Styling */
+.auth-box .checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.auth-box .checkbox-container input {
+  margin-right: 8px;
+}
+
+/* =================== Login Selection Styling =================== */
+.role-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.role-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  padding: 20px;
+  background: #1d1f32; /* Dark Violet */
+  border: 2px solid #e8a66c; /* Gold Border */
+  border-radius: 10px;
+  text-decoration: none;
+  color: #e8a66c; /* Gold Text */
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.role-card i {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.role-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #e8a66c; /* Gold */
+}
+
+.role-card p {
+  font-size: 1rem;
+  color: #e8a66c; /* Gold */
+}
+
+.role-card:hover {
+  background: #e8a66c;
+  color: #1d1f32; /* Dark Violet */
+}
+
+.role-card:hover h3,
+.role-card:hover p {
+  color: #1d1f32; /* Dark Violet */
+}
+
+/* =================== Responsive Design =================== */
+@media screen and (max-width: 500px) {
+  .auth-box {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .role-card {
+    width: 90%;
+  }
+}

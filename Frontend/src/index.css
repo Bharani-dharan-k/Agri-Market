@@ -1,0 +1,51 @@
+/* =================== General Reset =================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 80px; /* Prevents navbar from hiding content */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+body {
+  background-color: #fff5e6; /* Cream background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Headings & Text */
+h1, h2, h3, p {
+  color: #333; /* Dark text for readability */
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #008080; /* Teal */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #006666; /* Darker teal */
+}
+
+/* Buttons */
+button {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}

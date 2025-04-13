@@ -1,0 +1,29 @@
+.success-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .success-container h2 {
+    color: green;
+    font-size: 24px;
+  }
+  
+  .success-container p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .success-container button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .success-container button:hover {
+    background-color: #218838;
+  }
+  

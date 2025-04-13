@@ -1,0 +1,85 @@
+/* Page Container */
+.selection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensures full height */
+    background: #fbeed9; /* Change this to match the sides */
+    text-align: center;
+    padding: 20px;
+    width: 100%; /* Ensures full width */
+}
+
+/* Page Heading */
+.selection-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Role Options Grid */
+.role-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Ensures vertical centering */
+    gap: 20px;
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Optional: Adjust for better layout */
+}
+
+/* Individual Role Card (Square Shape) */
+.role-card {
+    background: white;
+    width: 220px; /* Fixed width */
+    height: 220px; /* Fixed height to keep it square */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers content inside */
+    text-decoration: none;
+}
+
+/* Hover Effect */
+.role-card:hover {
+    transform: scale(1.05);
+    background: #eaeaea;
+}
+
+/* Icons */
+.role-card i {
+    font-size: 2.5rem;
+    color: #e60023;
+    margin-bottom: 10px;
+}
+
+/* Role Card Heading */
+.role-card h3 {
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+/* Role Card Description */
+.role-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .role-options {
+        flex-direction: column; /* Stacks cards vertically */
+    }
+
+    .role-card {
+        width: 200px; /* Slightly smaller for better fit */
+        height: 200px; /* Maintain square shape */
+    }
+}

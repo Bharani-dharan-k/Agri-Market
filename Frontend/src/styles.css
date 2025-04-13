@@ -1,0 +1,305 @@
+/* Importing Modern Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F8F9FA;
+  color: #1C1F33;
+}
+
+/* ==================== NAVBAR ==================== */
+.navbar {
+  background-color: #1C1F33; /* Deep Blue */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Updated Logo Styling */
+.logo {
+  height: 50px; /* Fits well inside the navbar */
+  width: auto;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navigation Links */
+.nav-right {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.nav-links li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #E0E0E0;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 14px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 6px;
+}
+
+.nav-links a:hover {
+  background-color: #F4A261;
+  color: #1C1F33;
+}
+
+.login-btn {
+  background-color: #F4A261;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: #E76F51;
+}
+
+/* Responsive Navbar */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1C1F33;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-right {
+    flex-direction: column;
+  }
+
+  /* Responsive Logo Size */
+  .logo {
+    height: 40px; /* Smaller size for mobile */
+  }
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero {
+  margin-top: 75px;
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #1C1F33, #2A2D42);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #F4A261;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #E0E0E0;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.signup {
+  background-color: #F4A261;
+  color: white;
+}
+
+.signup:hover {
+  background-color: #E76F51;
+}
+
+.logo {
+  height: 50px; /* Adjusted to fit within the navbar */
+  width: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Logo Size */
+@media screen and (max-width: 768px) {
+  .logo {
+    height: 40px; /* Smaller size for mobile */
+  }
+}
+
+.login:hover {
+  background-color: white;
+  color: #1C1F33;
+}
+
+/* ==================== COMMON STYLING ==================== */
+.section {
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 60px 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Features Section */
+@media screen and (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-box {
+    width: 90%;
+  }
+}
+
+/* ==================== FOOTER ==================== */
+.footer {
+  background-color: #1C1F33;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Developer and Features List */
+.about-list, .dev-list {
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-list li, .dev-list li {
+  font-size: 18px;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f4a261, #e76f51);
+  color: white;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-list li:hover, .dev-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Icons for Features */
+.about-list li:nth-child(1)::before { content: "📊"; }
+.about-list li:nth-child(2)::before { content: "🌿"; }
+.about-list li:nth-child(3)::before { content: "📱"; }
+.about-list li:nth-child(4)::before { content: "🌦️"; }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-list li, .dev-list li {
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+}
